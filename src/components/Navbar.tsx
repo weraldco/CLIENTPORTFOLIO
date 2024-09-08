@@ -1,69 +1,80 @@
-import { BiPhone } from 'react-icons/bi';
-import {
-	BsClock,
-	BsFacebook,
-	BsInstagram,
-	BsTwitterX,
-	BsYoutube,
-} from 'react-icons/bs';
-import { CiClock1, CiLocationOn } from 'react-icons/ci';
-import { FaClock } from 'react-icons/fa';
-import { FiClock } from 'react-icons/fi';
-import { SlLocationPin } from 'react-icons/sl';
+import { BiPhone } from "react-icons/bi";
+import { BsTwitterX, BsYoutube } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { FiClock } from "react-icons/fi";
+import { RiInstagramFill } from "react-icons/ri";
+import { SlLocationPin } from "react-icons/sl";
+import { Link } from "react-router-dom";
 const Navbar = () => {
-	return (
-		<>
-			<header>
-				<nav className="grid grid-cols-2 px-2 py-1">
-					<div className="flex gap-3 text-gray-700">
-						<BsFacebook />
-						<BsTwitterX />
-						<BsInstagram />
-						<BsYoutube />
-					</div>
-					<div className="flex gap-5 text-[0.8em] place-content-end">
-						<div className="flex items-center gap-1">
-							<SlLocationPin className="text-green-800" />
-							243 Clark Avenue - Bagumbayan Quezon City, PH 1105
-						</div>
-						<div className="flex items-center gap-1">
-							<BiPhone className="text-green-800" /> (02)995995
-						</div>
-						<div className="flex items-center gap-1">
-							<FiClock className="text-green-800" /> 9:00 AM - 6:00 AM
-						</div>
-					</div>
-				</nav>
-				<nav className="grid grid-cols-3  items-center p-2">
-					<div className="flex gap-2">
-						<img src="/img/logo.png" alt="" className="w-[70px]" />
-						<span className="font-bold">
-							Financial <br />
-							Growth
-						</span>
-					</div>
-					<div className="items-center">
-						<ul className="flex flex-row gap-8 text-sm">
-							<li className="hover:bg-slate-100 px-4 py-2 rounded-full transition-all">
-								Home
-							</li>
-							<li className="hover:bg-slate-100 px-4 py-2 rounded-full transition-all">
-								Services
-							</li>
-							<li className="hover:bg-slate-100 px-4 py-2 rounded-full transition-all">
-								About us
-							</li>
-						</ul>
-					</div>
-					<div className="grid justify-end">
-						<button className="bg-green-700 text-white px-5 py-4 rounded-lg text-sm hover:bg-green-600 transition-all">
-							Book Appointment
-						</button>
-					</div>
-				</nav>
-			</header>
-		</>
-	);
+  return (
+    <>
+      <header>
+        <nav className="grid grid-cols-2 border-b-2 px-3 py-4">
+          <div className="flex gap-3 text-xs text-gray-500">
+            <Link
+              to="/"
+              className="rounded-full bg-gray-100 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
+            >
+              <FaFacebookF />
+            </Link>
+            <Link
+              to="/"
+              className="rounded-full bg-gray-100 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
+            >
+              <BsTwitterX />
+            </Link>
+            <Link
+              to="/"
+              className="rounded-full bg-gray-100 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
+            >
+              <RiInstagramFill />
+            </Link>
+            <Link
+              to="/"
+              className="rounded-full bg-gray-100 p-2 hover:bg-gray-200 hover:text-gray-700"
+            >
+              <BsYoutube />
+            </Link>
+          </div>
+          <div className="flex place-content-end gap-5 text-[0.74em]">
+            <div className="flex items-center gap-1">
+              <SlLocationPin className="text-sm text-green-800" />
+              243 Clark Avenue - Bagumbayan Quezon City, PH 1105
+            </div>
+            <div className="flex items-center gap-1">
+              <BiPhone className="text-sm text-green-800" /> (02)995995
+            </div>
+            <div className="flex items-center gap-1">
+              <FiClock className="text-sm text-green-800" /> 9:00 AM - 6:00 PM
+            </div>
+          </div>
+        </nav>
+        <nav className="grid grid-cols-3 items-center p-4">
+          <div className="flex gap-2">
+            <img src="/img/logo3.png" alt="" className="w-[250px]" />
+          </div>
+          <div className="items-center text-[0.95em]">
+            <ul className="flex flex-row gap-8">
+              <li className="rounded-full px-4 py-2 transition-all hover:bg-slate-100">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="rounded-full px-4 py-2 transition-all hover:bg-slate-100">
+                <Link to="/services">Services</Link>
+              </li>
+              <li className="rounded-full px-4 py-2 transition-all hover:bg-slate-100">
+                <Link to="/about">About us</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="grid justify-end">
+            <button className="rounded-lg bg-green-700 px-5 py-4 text-sm text-white transition-all hover:bg-green-600">
+              Book Appointment
+            </button>
+          </div>
+        </nav>
+      </header>
+    </>
+  );
 };
 
 export default Navbar;
