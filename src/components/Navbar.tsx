@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <nav className="grid grid-cols-3 items-center p-4">
+        <nav className="grid grid-cols-3 items-center py-4">
           <div className="flex gap-2">
             <img src="/img/logo3.png" alt="" className="w-[250px]" />
           </div>

@@ -28,7 +28,7 @@ const Carousel = () => {
               imgIndex === index && (
                 <div
                   key={image.url}
-                  className={`block h-[650px] w-full object-cover translate-x-[${
+                  className={`block h-[750px] w-full object-cover translate-x-[${
                     -100 * imgIndex
                   }%] flex-shrink-0 flex-grow-0 duration-300 ease-in-out`}
                 >
