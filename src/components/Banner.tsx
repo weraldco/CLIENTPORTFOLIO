@@ -1,13 +1,15 @@
 const Banner = () => {
   return (
     <>
-      <div className="relative grid h-[750px] items-center justify-center py-[100px]">
-        <img
+      <div className="relative grid  items-center justify-center py-[100px] bg-gray-400">
+        <div className="bg-gray-300">
+          <img
           src="/img/plantvest2.png"
-          className="absolute left-[150px] top-[70px] w-[900px]"
+          className=" w-[900px]"
           alt=""
         />
-        <div className="absolute right-[200px] top-[100px] grid w-[600px] gap-3">
+          </div>
+        <div className="grid w-[600px] gap-3">
           <span className="text-md font-bold uppercase text-gray-600">
             Welcome to FinanceUp, your Financial Advisor
           </span>
