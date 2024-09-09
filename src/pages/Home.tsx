@@ -1,8 +1,11 @@
 import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
+import MemberCount from "../components/MemberCount";
+import MembersFeedback from "../components/MembersFeedback";
 import OurTeam from "../components/OurTeam";
 import PopularCause from "../components/PopularCause";
 import ServicesSections from "../components/ServicesSections";
+import SubscribeUs from "../components/SubscribeUs";
 import WhyHireUs from "../components/WhyHireUs";
 
 const Home = () => {
@@ -18,6 +21,9 @@ const Home = () => {
       <WhyHireUs />
       <PopularCause />
       <OurTeam />
+      <MemberCount />
+      <MembersFeedback />
+      <SubscribeUs />
     </>
   );
 };
