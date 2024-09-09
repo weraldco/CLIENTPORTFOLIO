@@ -1,15 +1,20 @@
-import { FaMoneyBillWheat } from "react-icons/fa6";
+type ServicesItemProps = {
+  logo: any;
+  title: string;
+  content: string;
+};
 
-const ServicesItem = () => {
+const ServicesItem = ({ logo, title, content }: ServicesItemProps) => {
   return (
     <>
-      <div className="w-[300px] rounded-lg border-2 border-gray-300 p-8">
-        <FaMoneyBillWheat className="text-6xl" />
-        <h1 className="text-xl font-bold">Investment Management</h1>
-        <span>
-          We help people to develop solutions for Financial Problems. Giving you
-          a chance to have a freedom in your Investment.
-        </span>
+      <div className="grid h-[350px] w-[300px] items-center justify-center gap-10 rounded-xl bg-white p-8 shadow-lg">
+        <div className="grid h-[100px] justify-center text-center text-7xl text-green-700">
+          {logo}
+        </div>
+        <div className="h-[150px]">
+          <h1 className="text-lg font-bold">{title}</h1>
+          <span className="text-base text-gray-700">{content}</span>
+        </div>
       </div>
     </>
   );
