@@ -6,10 +6,10 @@ import ServicesItem from "./ServicesItem";
 const ServicesSections = () => {
   return (
     <>
-      <div className="bg-slate-50 p-24 pt-[125px]">
-        <div className="grid gap-6 text-center">
-          <h3 className="text-lg font-bold text-gray-600">OUR SERVICES</h3>
-          <h1 className="text-5xl font-bold text-black">
+      <div className="bg-slate-50 grid gap-10 py-24">
+        <div className="grid text-center">
+          <h3 className="text-base font-bold text-gray-500 mb-5 ">OUR SERVICES</h3>
+          <h1 className="font-bold text-black mb-5 text-5xl ">
             We Are Here To Help You
           </h1>
           <span className="text-md text-gray-600">
@@ -20,7 +20,7 @@ const ServicesSections = () => {
         <div className="grid grid-flow-col items-center justify-center gap-5">
           <ServicesItem
             logo={<FaMoneyBillWheat />}
-            title="Investment Management"
+            title="Investment Planning"
             content="We help people to develop solutions for Financial Problems. Giving
             you a chance to have a freedom in your Investment."
           />

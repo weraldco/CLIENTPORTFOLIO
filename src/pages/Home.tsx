@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
+import OurTeam from "../components/OurTeam";
 import PopularCause from "../components/PopularCause";
 import ServicesSections from "../components/ServicesSections";
 import WhyHireUs from "../components/WhyHireUs";
@@ -16,6 +17,7 @@ const Home = () => {
       <ServicesSections />
       <WhyHireUs />
       <PopularCause />
+      <OurTeam />
     </>
   );
 };

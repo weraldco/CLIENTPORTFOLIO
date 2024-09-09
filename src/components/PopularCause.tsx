@@ -3,7 +3,7 @@ const PopularCause = () => {
     <>
       <div className="grid justify-center gap-10 p-20">
         <div className="grid place-content-center gap-5 text-center">
-          <h3 className="text-lg font-bold text-gray-600">
+          <h3 className="text-base font-bold text-gray-500">
             CAUSES WE WANT TO ACHIEVE
           </h3>
           <h1 className="text-5xl font-bold text-black">
@@ -67,6 +67,18 @@ const PopularCause = () => {
 
 export default PopularCause;
 
+type CauseItemProps = {
+  imgUrl: string;
+  label: string;
+  title: string;
+  content: string;
+  type: string;
+  percentage: string;
+  amount: string;
+  total: string;
+  extraLabel: string;
+};
+
 const CauseItem = ({
   imgUrl,
   label,
@@ -77,10 +89,10 @@ const CauseItem = ({
   amount,
   total,
   extraLabel,
-}) => {
+}: CauseItemProps) => {
   return (
     <>
-      <div className="grid w-[450px] gap-5">
+      <div className="grid w-[450px] gap-5 rounded-b-xl pb-10 shadow-md">
         <div className="relative border-b-[7px] border-green-700">
           <img
             src={imgUrl}
@@ -99,7 +111,7 @@ const CauseItem = ({
               {percentage} {extraLabel}
             </span>
             <div className="h-[8px] w-full rounded-lg bg-slate-300">
-              <div className="h-full w-[52%] bg-yellow-400"></div>
+              <div className="h-full w-[52%] rounded-lg bg-yellow-400"></div>
             </div>
             <div className="grid grid-cols-2 justify-evenly">
               <div className="grid w-[125px] grid-flow-col items-center">
