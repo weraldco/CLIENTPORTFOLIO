@@ -1,21 +1,21 @@
 import { BsPiggyBank } from "react-icons/bs";
 import { FaMoneyBillWheat } from "react-icons/fa6";
 import { PiGraduationCap, PiGrains, PiHandCoins } from "react-icons/pi";
+import ContentHeader from "./ContentHeader";
 import ServicesItem from "./ServicesItem";
 
 const ServicesSections = () => {
   return (
     <>
-      <div className="bg-slate-50 grid gap-10 py-24">
-        <div className="grid text-center">
-          <h3 className="text-base font-bold text-gray-500 mb-5 ">OUR SERVICES</h3>
-          <h1 className="font-bold text-black mb-5 text-5xl ">
-            We Are Here To Help You
-          </h1>
-          <span className="text-md text-gray-600">
-            At FinanceUp Services, let us help you solve problems so that you
-            can focus on your goals. <br /> We support your dream to come true.
-          </span>
+      <div className="grid gap-10 bg-slate-50 py-24">
+        <div className="grid place-content-center">
+          <ContentHeader
+            className="grid w-[550px] text-center"
+            subTitle="OUR SERVICES"
+            title="We Are Here To Help You"
+            content="At FinanceUp Services, let us help you solve problems so that you can
+          focus on your goals. We support your dream to come true."
+          />
         </div>
         <div className="grid grid-flow-col items-center justify-center gap-5">
           <ServicesItem

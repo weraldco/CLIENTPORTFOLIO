@@ -1,13 +1,10 @@
 import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
-import ContactUs from "../components/ContactUs";
-import Footer from "../components/Footer";
 import MemberCount from "../components/MemberCount";
 import MembersFeedback from "../components/MembersFeedback";
 import OurTeam from "../components/OurTeam";
 import PopularCause from "../components/PopularCause";
 import ServicesSections from "../components/ServicesSections";
-import SubscribeUs from "../components/SubscribeUs";
 import WhyHireUs from "../components/WhyHireUs";
 
 const Home = () => {
@@ -25,9 +22,6 @@ const Home = () => {
       <OurTeam />
       <MemberCount />
       <MembersFeedback />
-      <SubscribeUs />
-      <ContactUs />
-      <Footer />
     </>
   );
 };

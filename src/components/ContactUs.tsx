@@ -14,7 +14,11 @@ const ContactUs = () => {
         <div className="grid grid-cols-2 gap-10">
           <div className="grid px-5">
             <div>
-              <img src="" alt="" className="h-[200px] w-full" />
+              <img
+                src="/img/companygrouppic2.png"
+                alt=""
+                className="h-[220px] w-full rounded-xl object-cover"
+              />
             </div>
             <div className="grid gap-3">
               <span className="text-sm text-gray-500">
@@ -65,9 +69,9 @@ const ContactUs = () => {
               name=""
               id=""
               placeholder="Message"
-              className="w-full rounded-lg bg-gray-100 p-4"
+              className="w-full resize-none rounded-lg bg-gray-100 p-4"
             />
-            <button className="rounded-lg bg-yellow-400 py-5">
+            <button className="rounded-lg bg-yellow-400 py-5 text-sm transition-all hover:bg-yellow-300">
               Make an Appointment
             </button>
           </div>

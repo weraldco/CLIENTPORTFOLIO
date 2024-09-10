@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
@@ -10,14 +11,18 @@ function App() {
     <>
       <div className="flex justify-center">
         <div className="w-[90%]">
+          {/* Header */}
           <Navbar />
-
+          {/* Content section here */}
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/services" element={<Services />}></Route>
             <Route path="/about" element={<AboutUs />}></Route>
             <Route path="*" element={<PageNotFound />}></Route>
           </Routes>
+
+          {/* Footer Section */}
+          <Footer />
         </div>
       </div>
     </>

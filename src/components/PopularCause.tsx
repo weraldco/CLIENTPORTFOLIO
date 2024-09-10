@@ -1,19 +1,18 @@
+import ContentHeader from "./ContentHeader";
+
 const PopularCause = () => {
   return (
     <>
       <div className="grid justify-center gap-10 p-20">
-        <div className="grid place-content-center gap-5 text-center">
-          <h3 className="text-base font-bold text-gray-500">
-            CAUSES WE WANT TO ACHIEVE
-          </h3>
-          <h1 className="text-5xl font-bold text-black">
-            Find The Popular Cause <br /> and Help You
-          </h1>
-          <span className="text-md w-[700px] text-gray-600">
-            At FinanceUp Services, we identify all the cause of not having a
+        <div className="grid place-content-center">
+          <ContentHeader
+            className="grid w-[700px] text-center"
+            subTitle="CAUSES WE WANT TO ACHIEVE"
+            title="Find The Popular Cause and Help You"
+            content="At FinanceUp Services, we identify all the cause of not having a
             financial freedom so let us help you solve problems so that you can
-            focus on your goals. We support your dream to come true.
-          </span>
+            focus on your goals. We support your dream to come true."
+          />
         </div>
 
         <div className="grid grid-flow-col gap-10">

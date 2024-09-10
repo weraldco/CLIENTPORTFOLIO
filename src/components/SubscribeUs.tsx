@@ -1,18 +1,19 @@
+import ContentHeader from "./ContentHeader";
+
 const SubscribeUs = () => {
   return (
     <>
       <div className="grid gap-10 bg-slate-100 p-20">
-        <div className="grid place-items-center gap-5">
-          <h1 className="text-base font-bold text-gray-500">SUBSCRIBE TO US</h1>
-          <span className="text-5xl font-bold text-black">
-            Subscribe for Newsletter
-          </span>
-          <span className="grid w-[700px] gap-5 text-center">
-            Join us and discover our mission and vission, we help you assestment
+        <div className="grid place-content-center">
+          <ContentHeader
+            className="grid w-[700px] text-center"
+            subTitle="SUBSCRIBE TO US"
+            title="Subscribe for Newsletter"
+            content="Join us and discover our mission and vission, we help you assestment
             for all the. To offer comprehensive financial planning and
             investment management services that address all aspects of our
-            clients' financial lives.
-          </span>
+            clients' financial lives."
+          />
         </div>
         <div className="grid grid-flow-col place-content-center gap-4">
           <input

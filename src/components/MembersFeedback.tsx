@@ -1,22 +1,19 @@
 import { BiSolidQuoteLeft } from "react-icons/bi";
+import ContentHeader from "./ContentHeader";
 
 const MembersFeedback = () => {
   return (
     <>
       <div className="grid place-items-center py-20">
-        <div className="grid w-[700px] gap-5 text-center">
-          <h3 className="text-base font-bold text-gray-500">
-            FEEDBACK FROM OUR MEMBERS
-          </h3>
-          <h1 className="text-5xl font-bold text-black">
-            Our Goal is To Satisfied Our Member By Helping Them
-          </h1>
-          <span className="text-md text-gray-600">
-            At FinanceUp Services, we identify all the cause of not having a
+        <ContentHeader
+          className="grid w-[700px] text-center"
+          subTitle="FEEDBACK FROM OUR MEMBERS"
+          title="Our Goal is To Satisfied Our Member By Helping Them"
+          content="At FinanceUp Services, we identify all the cause of not having a
             financial freedom so let us help you solve problems so that you can
-            focus on your goals. We support your dream to come true.
-          </span>
-        </div>
+            focus on your goals. We support your dream to come true."
+        />
+
         <div className="grid grid-flow-col gap-10 py-10">
           <FeedbackItem />
           <FeedbackItem />
