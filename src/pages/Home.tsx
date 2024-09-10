@@ -1,5 +1,7 @@
 import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
+import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
 import MemberCount from "../components/MemberCount";
 import MembersFeedback from "../components/MembersFeedback";
 import OurTeam from "../components/OurTeam";
@@ -24,6 +26,8 @@ const Home = () => {
       <MemberCount />
       <MembersFeedback />
       <SubscribeUs />
+      <ContactUs />
+      <Footer />
     </>
   );
 };
