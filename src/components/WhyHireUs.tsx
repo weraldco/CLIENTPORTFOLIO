@@ -8,7 +8,7 @@ const WhyHireUs = () => {
         <div className="grid gap-10">
           <div className="grid place-content-start">
             <ContentHeader
-              className="grid w-[700px] text-left"
+              className="grid text-left"
               subTitle="WHY CHOOSE US"
               title="Come And Join With Us for A Better Life and Future"
               content=""

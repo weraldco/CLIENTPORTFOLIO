@@ -31,7 +31,7 @@ const Advisor = () => {
   return (
     <>
       <div className="group relative w-80 duration-300 ease-in-out hover:scale-105">
-        <img src="/img/advisor/advisor2.png" className="rounded-xl" alt="" />
+        <img src="/img/advisor/advisor1.png" className="rounded-xl" alt="" />
         <div className="absolute -bottom-10 left-5 right-5 grid rounded-lg bg-slate-100 py-4 text-center group-hover:bg-green-700">
           <span className="font-bold group-hover:text-yellow-400">
             Sophia Andres
