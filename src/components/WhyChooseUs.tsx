@@ -1,10 +1,10 @@
 import { GiRoundStar } from "react-icons/gi";
 import ContentHeader from "./ContentHeader";
 
-const WhyHireUs = () => {
+const WhyChooseUs = () => {
   return (
     <>
-      <div className="grid grid-flow-col gap-10 bg-orange-50 p-20 text-gray-500">
+      <div className="grid grid-flow-col gap-10 bg-orange-50 p-10 text-gray-500">
         <div className="grid gap-10">
           <div className="grid place-content-start">
             <ContentHeader
@@ -54,7 +54,7 @@ const WhyHireUs = () => {
             </ul>
           </span>
         </div>
-        <div className="grid place-content-center">
+        <div className="hidden place-content-center md:grid">
           <img src="/img/heart.png" alt="" />
         </div>
       </div>
@@ -62,7 +62,7 @@ const WhyHireUs = () => {
   );
 };
 
-export default WhyHireUs;
+export default WhyChooseUs;
 
 const HireItem = ({ title, content }) => {
   return (

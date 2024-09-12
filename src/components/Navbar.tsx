@@ -10,14 +10,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
   const handleMenuOn = () => {
-    const navBarMenu = document.querySelector(".navbar-menu");
-    navBarMenu?.classList.toggle("translate-x-[0]");
-    console.log(navBarMenu);
     setIsMenu(!isMenu);
   };
+  console.log(isMenu);
   return (
     <>
-      <header>
+      <header className="">
         <nav className="grid grid-flow-row border-b-2 px-3 py-4 md:grid-cols-2">
           <div className="flex place-content-center gap-3 text-xs text-gray-500 md:place-content-start">
             <Link
@@ -46,7 +44,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="grid gap-5 text-[0.74em] md:grid-flow-col md:place-content-end">
-            <div className="gap-1md:justify-normal flex items-center justify-center">
+            <div className="flex items-center justify-center gap-1 md:justify-normal">
               <SlLocationPin className="text-sm text-green-800" />
               243 Clark Avenue - Bagumbayan Quezon City, PH 1105
             </div>
@@ -58,7 +56,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <nav className="relative grid grid-flow-col items-center py-4 md:grid-cols-3">
+        <nav className="relative grid grid-flow-col items-center px-2 py-3 md:grid-cols-3">
           {/* Logo */}
           <div className="flex gap-2">
             <img src="/img/logo4.png" alt="" className="w-[250px]" />
@@ -106,6 +104,30 @@ const Navbar = () => {
             )}
           </div>
         </nav>
+        {isMenu && (
+          <nav className="t flex items-center justify-center py-10">
+            <ul className="grid gap-10">
+              <li
+                className="rounded-none px-4 py-2 transition-all hover:bg-slate-100 md:rounded-full"
+                onClick={handleMenuOn}
+              >
+                <Link to="/">Home</Link>
+              </li>
+              <li
+                className="rounded-full px-4 py-2 transition-all hover:bg-slate-100"
+                onClick={handleMenuOn}
+              >
+                <Link to="/services">Services</Link>
+              </li>
+              <li
+                className="rounded-full px-4 py-2 transition-all hover:bg-slate-100"
+                onClick={handleMenuOn}
+              >
+                <Link to="/about">About us</Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
     </>
   );

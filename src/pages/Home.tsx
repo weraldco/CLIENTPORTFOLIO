@@ -1,11 +1,11 @@
 import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
-import MemberCount from "../components/MemberCount";
+import { default as FrequetlyAskedQuestion } from "../components/FrequetlyAskedQuestion";
 import MembersFeedback from "../components/MembersFeedback";
 import OurTeam from "../components/OurTeam";
 import PopularCause from "../components/PopularCause";
 import ServicesSections from "../components/ServicesSections";
-import WhyHireUs from "../components/WhyHireUs";
+import WhyChooseUS from "../components/WhyChooseUs";
 
 const Home = () => {
   return (
@@ -17,10 +17,10 @@ const Home = () => {
 
       <Banner />
       <ServicesSections />
-      <WhyHireUs />
+      <WhyChooseUS />
       <PopularCause />
       <OurTeam />
-      <MemberCount />
+      <FrequetlyAskedQuestion />
       <MembersFeedback />
     </>
   );

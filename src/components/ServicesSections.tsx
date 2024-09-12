@@ -7,7 +7,7 @@ import ServicesItem from "./ServicesItem";
 const ServicesSections = () => {
   return (
     <>
-      <div className="grid gap-10 bg-slate-50 py-24">
+      <div className="grid gap-10 bg-slate-50 p-10">
         <div className="grid place-content-center">
           <ContentHeader
             className="grid text-center md:w-[550px]"

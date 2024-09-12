@@ -1,4 +1,4 @@
-import WhyHireUs from "../components/WhyHireUs";
+import WhyHireUs from "../components/WhyChooseUs";
 
 const AboutUs = () => {
   return (

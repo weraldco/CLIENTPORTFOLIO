@@ -1,21 +1,24 @@
+import ContentHeader from "./ContentHeader";
+
 const OurTeam = () => {
   return (
     <>
-      <div className="grid gap-10 py-20">
-        <div className="grid gap-8">
-          <h3 className="text-base font-bold text-gray-500">OUR EXPERT TEAM</h3>
-          <div className="grid grid-flow-col">
-            <h1 className="text-5xl font-bold text-black">
-              Meet The Team Behind <br /> Their Success Story
-            </h1>
-            <div className="grid place-content-end">
-              <button className="grid w-64 items-center self-end rounded-lg bg-yellow-400 px-4 py-4 text-sm transition-all hover:bg-yellow-300">
-                View All Members
-              </button>
-            </div>
+      <div className="grid gap-10 pb-20 pt-10">
+        <div className="grid items-center md:grid-flow-col">
+          <ContentHeader
+            className="grid text-center md:w-[700px] md:text-left"
+            subTitle="OUR EXPERT TEAM"
+            title="Meet The Team Behind Their Success Story"
+            content=""
+          />
+          <div className="grid place-content-center md:place-content-end">
+            <button className="grid rounded-lg bg-yellow-400 px-4 py-4 text-sm transition-all hover:bg-yellow-300">
+              View All Members
+            </button>
           </div>
         </div>
-        <div className="grid place-items-center gap-x-10 gap-y-20 md:grid-flow-col">
+
+        <div className="grid place-items-center gap-x-5 gap-y-20 md:grid-flow-col">
           <Advisor
             img_url="/img/advisor/advisor1.png"
             name="Alexander Great"

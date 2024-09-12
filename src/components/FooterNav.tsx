@@ -28,43 +28,45 @@ const FooterNav = () => {
             </ul>
           </div>
         </nav>
-        <nav className="grid grid-cols-2 border-t-2 border-t-gray-600 px-3 py-4">
+        <nav className="grid place-items-center gap-5 border-t-2 border-t-gray-600 px-3 py-4 md:grid-cols-2">
           <div className="flex gap-3 text-base text-gray-200">
             <Link
               to="/"
-              className="rounded-full bg-gray-600 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
+              className="rounded-full bg-gray-800 p-2 transition-all hover:bg-yellow-400 hover:text-gray-700"
             >
               <FaFacebookF />
             </Link>
             <Link
               to="/"
-              className="rounded-full bg-gray-600 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
+              className="rounded-full bg-gray-800 p-2 transition-all hover:bg-yellow-400 hover:text-gray-700"
             >
               <BsTwitterX />
             </Link>
             <Link
               to="/"
-              className="rounded-full bg-gray-600 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
+              className="rounded-full bg-gray-800 p-2 transition-all hover:bg-yellow-400 hover:text-gray-700"
             >
               <RiInstagramFill />
             </Link>
             <Link
               to="/"
-              className="rounded-full bg-gray-600 p-2 hover:bg-gray-200 hover:text-gray-700"
+              className="rounded-full bg-gray-800 p-2 hover:bg-yellow-400 hover:text-gray-700"
             >
               <BsYoutube />
             </Link>
           </div>
-          <div className="text-ye flex place-content-end gap-5 text-[0.8em] text-gray-200">
-            <div className="flex items-center gap-1">
-              <SlLocationPin className="text-base text-green-600" />
+          <div className="grid gap-5 text-center text-[0.8em] text-gray-200 md:place-content-end">
+            <div className="flex items-center justify-center gap-1">
+              <SlLocationPin size={20} className="text-base text-green-600" />
               243 Clark Avenue - Bagumbayan Quezon City, PH 1105
             </div>
-            <div className="flex items-center gap-1">
-              <BiPhone className="text-sm text-green-800" /> (02)995995
+            <div className="flex items-center justify-center gap-1">
+              <BiPhone size={20} className="text-sm text-green-600" />{" "}
+              (02)995995
             </div>
-            <div className="flex items-center gap-1">
-              <FiClock className="text-sm text-green-800" /> 9:00 AM - 6:00 PM
+            <div className="flex items-center justify-center gap-1">
+              <FiClock size={20} className="text-sm text-green-600" /> 9:00 AM -
+              6:00 PM
             </div>
           </div>
         </nav>

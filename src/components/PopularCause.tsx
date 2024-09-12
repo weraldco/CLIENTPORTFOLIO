@@ -3,7 +3,7 @@ import ContentHeader from "./ContentHeader";
 const PopularCause = () => {
   return (
     <>
-      <div className="grid justify-center gap-10 p-20">
+      <div className="grid justify-center gap-10 p-10">
         <div className="grid place-content-center">
           <ContentHeader
             className="grid text-center md:w-[700px]"

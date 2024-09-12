@@ -5,7 +5,7 @@ import ContentHeader from "./ContentHeader";
 const ContactUs = () => {
   return (
     <>
-      <div className="grid gap-10 bg-gray-100 md:p-20">
+      <div className="grid gap-10 bg-gray-100 p-10 md:p-20">
         <ContentHeader
           className="grid text-center md:w-[700px]"
           subTitle="CONTACT US"
