@@ -10,14 +10,14 @@ const ServicesSections = () => {
       <div className="grid gap-10 bg-slate-50 py-24">
         <div className="grid place-content-center">
           <ContentHeader
-            className="grid w-[550px] text-center"
+            className="grid text-center md:w-[550px]"
             subTitle="OUR SERVICES"
             title="We Are Here To Help You"
             content="At FinanceUp Services, let us help you solve problems so that you can
           focus on your goals. We support your dream to come true."
           />
         </div>
-        <div className="grid grid-flow-col items-center justify-center gap-5">
+        <div className="grid items-center justify-center gap-5 md:grid-flow-col">
           <ServicesItem
             logo={<FaMoneyBillWheat />}
             title="Investment Planning"

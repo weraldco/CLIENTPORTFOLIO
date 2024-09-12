@@ -15,22 +15,22 @@ const OurTeam = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-4 place-items-center">
+        <div className="grid place-items-center gap-x-10 gap-y-20 md:grid-flow-col">
           <Advisor
             img_url="/img/advisor/advisor1.png"
             name="Alexander Great"
             job="Professiional Adviser"
-          />{" "}
+          />
           <Advisor
             img_url="/img/advisor/advisor2.png"
             name="Sophia Andres"
             job="Professiional Adviser"
-          />{" "}
+          />
           <Advisor
             img_url="/img/advisor/advisor4.png"
             name="Keith Martin"
             job="Professiional Adviser"
-          />{" "}
+          />
           <Advisor
             img_url="/img/advisor/advisor5.png"
             name="Lylia Cortes"
@@ -52,7 +52,11 @@ const Advisor = ({ img_url, name, job }: AdvisorProps) => {
   return (
     <>
       <div className="group relative w-80 duration-300 ease-in-out hover:scale-105">
-        <img src={img_url} className="h-[400px] rounded-xl" alt="" />
+        <img
+          src={img_url}
+          className="h-[420px] w-[320px] rounded-xl object-cover"
+          alt=""
+        />
         <div className="absolute -bottom-10 left-5 right-5 grid rounded-lg bg-slate-100 py-4 text-center group-hover:bg-green-700">
           <span className="font-bold group-hover:text-yellow-400">{name}</span>
           <span className="text-sm group-hover:text-white">{job}</span>

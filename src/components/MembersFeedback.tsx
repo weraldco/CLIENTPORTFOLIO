@@ -6,7 +6,7 @@ const MembersFeedback = () => {
     <>
       <div className="grid place-items-center py-20">
         <ContentHeader
-          className="grid w-[700px] text-center"
+          className="grid text-center md:w-[700px]"
           subTitle="FEEDBACK FROM OUR MEMBERS"
           title="Our Goal is To Satisfied Our Member By Helping Them"
           content="At FinanceUp Services, we identify all the cause of not having a
@@ -14,7 +14,7 @@ const MembersFeedback = () => {
             focus on your goals. We support your dream to come true."
         />
 
-        <div className="grid grid-flow-col gap-10 py-10">
+        <div className="grid gap-10 py-10 md:grid-flow-col">
           <FeedbackItem />
           <FeedbackItem />
         </div>

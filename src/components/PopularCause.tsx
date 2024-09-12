@@ -6,7 +6,7 @@ const PopularCause = () => {
       <div className="grid justify-center gap-10 p-20">
         <div className="grid place-content-center">
           <ContentHeader
-            className="grid w-[700px] text-center"
+            className="grid text-center md:w-[700px]"
             subTitle="CAUSES WE WANT TO ACHIEVE"
             title="Find The Popular Cause and Help You"
             content="At FinanceUp Services, we identify all the cause of not having a
@@ -15,7 +15,7 @@ const PopularCause = () => {
           />
         </div>
 
-        <div className="grid grid-flow-col gap-10">
+        <div className="grid gap-10 md:grid-flow-col">
           <CauseItem
             imgUrl="/img/cause/cause3.png"
             label="Investement"

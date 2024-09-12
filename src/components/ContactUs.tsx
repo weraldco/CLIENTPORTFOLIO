@@ -1,18 +1,19 @@
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import ContentHeader from "./ContentHeader";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="grid gap-10 bg-gray-100 p-20">
-        <div className="grid place-items-center">
-          <h1 className="text-base font-bold text-gray-500">CONTACT US</h1>
-          <span className="text-5xl font-bold text-black">
-            We Love To Hear your Insights
-          </span>
-        </div>
-        <div className="grid grid-cols-2 gap-10">
-          <div className="grid px-5">
+      <div className="grid gap-10 bg-gray-100 md:p-20">
+        <ContentHeader
+          className="grid text-center md:w-[700px]"
+          subTitle="CONTACT US"
+          title="We Love To Hear your Insights"
+          content=""
+        />
+        <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-5 px-5">
             <div>
               <img
                 src="/img/companygrouppic2.png"

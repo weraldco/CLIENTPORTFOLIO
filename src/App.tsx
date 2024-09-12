@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center">
-        <div className="xxl:w-[1568px] w-full xl:w-[1280px]">
+        <div className="w-full xl:w-[1280px] 2xl:w-[1536px]">
           {/* Header */}
           <Navbar />
           {/* Content section here */}
@@ -22,7 +22,7 @@ function App() {
           </Routes>
 
           {/* Footer Section */}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </div>
     </>

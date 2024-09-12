@@ -12,7 +12,7 @@ const FooterNav = () => {
       <div className="footer-section grid gap-5 bg-gray-700 p-5">
         <nav className="grid grid-flow-col items-center">
           <div>
-            <img src="/img/logo3.png" alt="" className="w-[250px]" />
+            <img src="/img/logo4-white.png" alt="" className="w-[250px]" />
           </div>
           <div>
             <ul className="grid grid-flow-col text-gray-300">
