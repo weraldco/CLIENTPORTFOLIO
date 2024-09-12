@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const FooterNav = () => {
   return (
     <>
-      <div className="grid gap-5 bg-gray-700 p-5">
+      <div className="footer-section grid gap-5 bg-gray-700 p-5">
         <nav className="grid grid-flow-col items-center">
           <div>
             <img src="/img/logo3.png" alt="" className="w-[250px]" />

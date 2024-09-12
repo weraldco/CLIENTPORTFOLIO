@@ -17,7 +17,7 @@ const ContentHeader = ({
     <>
       <div className={`${className}`}>
         <h3 className="mb-5 text-base font-bold text-gray-500">{subTitle}</h3>
-        <h1 className="mb-5 text-5xl font-bold text-black">{title}</h1>
+        <h1 className="mb-5 text-5xl font-bold">{title}</h1>
         <span className="text-md text-gray-600">{content}</span>
       </div>
     </>

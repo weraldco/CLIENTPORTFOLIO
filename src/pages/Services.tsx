@@ -4,8 +4,8 @@ import ServicesSections from "../components/ServicesSections";
 const Services = () => {
   return (
     <>
-      <ServicesSections />
-      <OurTeam />
+      {/* <ServicesSections />
+      <OurTeam /> */}
     </>
   );
 };

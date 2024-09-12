@@ -16,10 +16,26 @@ const OurTeam = () => {
           </div>
         </div>
         <div className="grid grid-cols-4 place-items-center">
-          <Advisor />
-          <Advisor />
-          <Advisor />
-          <Advisor />
+          <Advisor
+            img_url="/img/advisor/advisor1.png"
+            name="Alexander Great"
+            job="Professiional Adviser"
+          />{" "}
+          <Advisor
+            img_url="/img/advisor/advisor2.png"
+            name="Sophia Andres"
+            job="Professiional Adviser"
+          />{" "}
+          <Advisor
+            img_url="/img/advisor/advisor4.png"
+            name="Keith Martin"
+            job="Professiional Adviser"
+          />{" "}
+          <Advisor
+            img_url="/img/advisor/advisor5.png"
+            name="Lylia Cortes"
+            job="Professiional Adviser"
+          />
         </div>
       </div>
     </>
@@ -27,18 +43,19 @@ const OurTeam = () => {
 };
 export default OurTeam;
 
-const Advisor = () => {
+type AdvisorProps = {
+  img_url: string;
+  name: string;
+  job: string;
+};
+const Advisor = ({ img_url, name, job }: AdvisorProps) => {
   return (
     <>
       <div className="group relative w-80 duration-300 ease-in-out hover:scale-105">
-        <img src="/img/advisor/advisor1.png" className="rounded-xl" alt="" />
+        <img src={img_url} className="h-[400px] rounded-xl" alt="" />
         <div className="absolute -bottom-10 left-5 right-5 grid rounded-lg bg-slate-100 py-4 text-center group-hover:bg-green-700">
-          <span className="font-bold group-hover:text-yellow-400">
-            Sophia Andres
-          </span>
-          <span className="text-sm group-hover:text-white">
-            Professional Adviser
-          </span>
+          <span className="font-bold group-hover:text-yellow-400">{name}</span>
+          <span className="text-sm group-hover:text-white">{job}</span>
         </div>
       </div>
     </>

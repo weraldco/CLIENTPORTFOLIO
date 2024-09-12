@@ -3,10 +3,10 @@ import ContentHeader from "./ContentHeader";
 const SubscribeUs = () => {
   return (
     <>
-      <div className="grid gap-10 bg-slate-100 p-20">
+      <div className="subscriber-section grid gap-10 bg-slate-100 p-20">
         <div className="grid place-content-center">
           <ContentHeader
-            className="grid w-[700px] text-center"
+            className="grid w-[700px] text-center text-gray-50"
             subTitle="SUBSCRIBE TO US"
             title="Subscribe for Newsletter"
             content="Join us and discover our mission and vission, we help you assestment

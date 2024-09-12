@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <nav className="grid grid-cols-2 border-b-2 px-3 py-4">
-          <div className="flex gap-3 text-xs text-gray-500">
+        <nav className="grid grid-flow-row border-b-2 px-3 py-4 md:grid-cols-2">
+          <div className="flex place-content-center gap-3 text-xs text-gray-500 md:place-content-start">
             <Link
               to="/"
               className="rounded-full bg-gray-100 p-2 transition-all hover:bg-gray-200 hover:text-gray-700"
@@ -36,24 +36,24 @@ const Navbar = () => {
               <BsYoutube />
             </Link>
           </div>
-          <div className="flex place-content-end gap-5 text-[0.74em]">
-            <div className="flex items-center gap-1">
+          <div className="grid gap-5 text-[0.74em] md:grid-flow-col md:place-content-end">
+            <div className="gap-1md:justify-normal flex items-center justify-center">
               <SlLocationPin className="text-sm text-green-800" />
               243 Clark Avenue - Bagumbayan Quezon City, PH 1105
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center justify-center gap-1 md:justify-normal">
               <BiPhone className="text-sm text-green-800" /> (02)995995
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center justify-center gap-1 md:justify-normal">
               <FiClock className="text-sm text-green-800" /> 9:00 AM - 6:00 PM
             </div>
           </div>
         </nav>
-        <nav className="grid grid-cols-3 items-center py-4">
+        <nav className="grid grid-flow-col items-center py-4 md:grid-cols-3">
           <div className="flex gap-2">
             <img src="/img/logo3.png" alt="" className="w-[250px]" />
           </div>
-          <div className="items-center text-[0.95em]">
+          <div className="fixed items-center text-[0.95em] md:static">
             <ul className="flex flex-row gap-8">
               <li className="rounded-full px-4 py-2 transition-all hover:bg-slate-100">
                 <Link to="/">Home</Link>
