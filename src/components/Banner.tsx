@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="grid gap-10 p-10 md:grid-cols-2">
         <div className="grid gap-8">
           <ContentHeader
-            className="grid text-center md:w-[700px] md:text-left"
+            className="grid text-center md:text-left"
             subTitle="WELCOME TO FINANCEUP, YOUR FINANCIAL ADVISOR"
             title="Helping Each Other Can Make World Better."
             content=" We help people manage and grow investment portfolio, including
@@ -16,13 +16,13 @@ const Banner = () => {
             including managing retirement accounts"
           />
 
-          <ul className="text-md grid list-disc list-none gap-3 pl-5 text-center text-gray-600">
+          <ul className="text-md grid list-none gap-3 pl-5 text-center text-gray-600 md:list-disc md:text-left">
             <li>Investment Management</li>
             <li>Retirement Planning</li>
             <li>Insurance Planning</li>
             <li>Debt Management</li>
           </ul>
-          <div className="grid place-content-center">
+          <div className="grid place-content-center md:place-content-start">
             <button className="mt-4 rounded-lg bg-green-700 px-10 py-5 text-sm font-bold text-white transition-all hover:bg-green-600">
               Discover more
             </button>

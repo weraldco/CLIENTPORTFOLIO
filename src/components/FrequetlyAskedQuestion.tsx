@@ -9,9 +9,9 @@ const FrequetlyAskedQuestion = () => {
   return (
     <>
       <div className="grid gap-10 bg-slate-50 p-10 md:grid-cols-2">
-        <div className="grid gap-10 py-10 text-center md:place-content-start">
+        <div className="grid gap-10 px-5 py-10 text-center">
           <ContentHeader
-            className="grid md:w-[700px] md:text-left"
+            className="grid text-center md:text-left"
             subTitle="RECENTLY ASKED QUESTION"
             title="Frequently Asked Question"
             content=" At FinanceUp Services, we identify all the cause of not having a financial freedom so let us help you solve problems so that you can
@@ -51,7 +51,7 @@ type CardMemberProps = {
 const CardMember = ({ count, label, children }: CardMemberProps) => {
   return (
     <>
-      <div className="grid w-[175px] justify-center rounded-lg bg-white py-5 text-center shadow-md">
+      <div className="grid w-[175px] justify-center rounded-lg bg-white py-5 text-center shadow-md duration-300 ease-in-out hover:scale-110">
         <div className="grid place-content-center py-5 text-4xl text-green-700">
           {children}
         </div>

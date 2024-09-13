@@ -1,11 +1,11 @@
 import OurTeam from "../components/OurTeam";
-import ServicesSections from "../components/ServicesSections";
+import ServicesDetails from "../components/ServicesDetails";
 
 const Services = () => {
   return (
     <>
-      {/* <ServicesSections />
-      <OurTeam /> */}
+      <ServicesDetails />
+      <OurTeam />
     </>
   );
 };

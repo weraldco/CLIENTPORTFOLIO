@@ -91,7 +91,7 @@ const CauseItem = ({
 }: CauseItemProps) => {
   return (
     <>
-      <div className="grid w-[425px] gap-5 rounded-b-xl pb-10 shadow-md">
+      <div className="grid w-full gap-5 rounded-b-xl pb-10 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[425px]">
         <div className="relative border-b-[7px] border-green-700">
           <img
             src={imgUrl}

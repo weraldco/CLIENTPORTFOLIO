@@ -4,7 +4,7 @@ import ContentHeader from "./ContentHeader";
 const MembersFeedback = () => {
   return (
     <>
-      <div className="grid place-items-center py-20">
+      <div className="grid place-items-center p-10">
         <ContentHeader
           className="grid text-center md:w-[700px]"
           subTitle="FEEDBACK FROM OUR MEMBERS"
@@ -28,8 +28,8 @@ export default MembersFeedback;
 const FeedbackItem = () => {
   return (
     <>
-      <div className="items-centerrounded-lg w-[400px] justify-start rounded-lg bg-gray-50 p-6 shadow-md">
-        <span>
+      <div className="w-full items-center justify-start rounded-lg bg-white p-6 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[400px]">
+        <span className="text-gray-600">
           <BiSolidQuoteLeft />
           We like the services of FinanceUp, it secure my future in different
           level. Thanks to this services
