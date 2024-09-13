@@ -1,7 +1,7 @@
 import { ComponentClass } from "react";
 
 type ContentHeaderProps = {
-  className: ComponentClass;
+  className: ComponentClass | string;
   subTitle: string;
   title: string;
   content: string;

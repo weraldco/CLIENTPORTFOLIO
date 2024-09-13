@@ -3,61 +3,63 @@ import ContentHeader from "./ContentHeader";
 const PopularCause = () => {
   return (
     <>
-      <div className="grid justify-center gap-10 p-10">
-        <div className="grid place-content-center">
-          <ContentHeader
-            className="grid text-center md:w-[700px]"
-            subTitle="CAUSES WE WANT TO ACHIEVE"
-            title="Find The Popular Cause and Help You"
-            content="At FinanceUp Services, we identify all the cause of not having a
+      <div className="grid place-content-center">
+        <div className="grid w-full justify-center gap-10 p-10 xl:w-[1280px] 2xl:w-[1536px]">
+          <div className="grid place-content-center">
+            <ContentHeader
+              className="grid text-center md:w-[700px]"
+              subTitle="CAUSES WE WANT TO ACHIEVE"
+              title="Find The Popular Cause and Help You"
+              content="At FinanceUp Services, we identify all the cause of not having a
             financial freedom so let us help you solve problems so that you can
             focus on your goals. We support your dream to come true."
-          />
-        </div>
+            />
+          </div>
 
-        <div className="grid gap-10 md:grid-flow-col">
-          <CauseItem
-            imgUrl="/img/cause/cause3.png"
-            label="Investement"
-            title="You see the result of Investment"
-            content="To offer comprehensive financial planning and investment management
+          <div className="grid gap-10 md:grid-flow-col">
+            <CauseItem
+              imgUrl="/img/cause/cause3.png"
+              label="Investement"
+              title="You see the result of Investment"
+              content="To offer comprehensive financial planning and investment management
             services that address all aspects of our clients' financial lives.
             To build lasting relationships with our clients through
             transparency, integrity, and a dedication to their best interests."
-            percentage="52%"
-            amount="24,280"
-            total="40,000"
-            type="invested"
-            extraLabel="people invested"
-          />
-          <CauseItem
-            imgUrl="/img/cause/cause2.png"
-            label="Education"
-            title="You let your child go to School"
-            content="To offer comprehensive financial planning and investment management
+              percentage="52%"
+              amount="24,280"
+              total="40,000"
+              type="invested"
+              extraLabel="people invested"
+            />
+            <CauseItem
+              imgUrl="/img/cause/cause2.png"
+              label="Education"
+              title="You let your child go to School"
+              content="To offer comprehensive financial planning and investment management
             services that address all aspects of our clients' financial lives.
             To build lasting relationships with our clients through
             transparency, integrity, and a dedication to their best interests."
-            percentage="52%"
-            amount="24,280"
-            total="40,000"
-            type="studied"
-            extraLabel="people studied"
-          />
-          <CauseItem
-            imgUrl="/img/cause/cause1.png"
-            label="Food"
-            title="Able to buy food for your everyday life"
-            content="To offer comprehensive financial planning and investment management
+              percentage="52%"
+              amount="24,280"
+              total="40,000"
+              type="studied"
+              extraLabel="people studied"
+            />
+            <CauseItem
+              imgUrl="/img/cause/cause1.png"
+              label="Food"
+              title="Able to buy food for your everyday life"
+              content="To offer comprehensive financial planning and investment management
             services that address all aspects of our clients' financial lives.
             To build lasting relationships with our clients through
             transparency, integrity, and a dedication to their best interests."
-            percentage="52%"
-            amount="24,280"
-            total="40,000"
-            type="buy food"
-            extraLabel="people can buy food"
-          />
+              percentage="52%"
+              amount="24,280"
+              total="40,000"
+              type="buy food"
+              extraLabel="people can buy food"
+            />
+          </div>
         </div>
       </div>
     </>
@@ -91,26 +93,28 @@ const CauseItem = ({
 }: CauseItemProps) => {
   return (
     <>
-      <div className="grid w-full gap-5 rounded-b-xl pb-10 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[425px]">
-        <div className="relative border-b-[7px] border-green-700">
+      <div className="group grid w-full gap-5 rounded-b-xl pb-10 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[425px]">
+        <div className="relative border-b-[7px] border-[#00715D]">
           <img
             src={imgUrl}
             alt=""
             className="h-[300px] w-full rounded-t-2xl object-cover"
           />
-          <span className="absolute bottom-0 left-10 rounded-t-lg bg-green-700 px-3 py-1 text-white">
+          <span className="absolute bottom-0 left-10 rounded-t-lg bg-[#00715D] px-3 py-1 text-white">
             {label}
           </span>
         </div>
         <div className="grid gap-5 px-5 text-gray-600">
-          <h1 className="text-xl font-bold text-green-700">{title}</h1>
+          <h1 className="text-xl font-bold text-[#00715D] group-hover:text-[#018f75]">
+            {title}
+          </h1>
           <span className="text-md">{content}</span>
           <div>
             <span className="grid justify-center text-sm">
               {percentage} {extraLabel}
             </span>
-            <div className="h-[8px] w-full rounded-lg bg-slate-300">
-              <div className="h-full w-[52%] rounded-lg bg-yellow-400"></div>
+            <div className="h-[8px] w-full rounded-lg bg-slate-200">
+              <div className="h-full w-[52%] rounded-lg bg-[#FDD65B]"></div>
             </div>
             <div className="grid grid-cols-2 justify-evenly">
               <div className="grid w-[125px] grid-flow-col items-center">

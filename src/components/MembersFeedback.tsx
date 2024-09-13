@@ -4,19 +4,21 @@ import ContentHeader from "./ContentHeader";
 const MembersFeedback = () => {
   return (
     <>
-      <div className="grid place-items-center p-10">
-        <ContentHeader
-          className="grid text-center md:w-[700px]"
-          subTitle="FEEDBACK FROM OUR MEMBERS"
-          title="Our Goal is To Satisfied Our Member By Helping Them"
-          content="At FinanceUp Services, we identify all the cause of not having a
+      <div className="grid place-content-center">
+        <div className="grid w-full place-items-center p-10 xl:w-[1280px] 2xl:w-[1536px]">
+          <ContentHeader
+            className="grid text-center md:w-[700px]"
+            subTitle="FEEDBACK FROM OUR MEMBERS"
+            title="Our Goal is To Satisfied Our Member By Helping Them"
+            content="At FinanceUp Services, we identify all the cause of not having a
             financial freedom so let us help you solve problems so that you can
             focus on your goals. We support your dream to come true."
-        />
+          />
 
-        <div className="grid gap-10 py-10 md:grid-flow-col">
-          <FeedbackItem />
-          <FeedbackItem />
+          <div className="grid gap-10 py-10 md:grid-flow-col">
+            <FeedbackItem />
+            <FeedbackItem />
+          </div>
         </div>
       </div>
     </>

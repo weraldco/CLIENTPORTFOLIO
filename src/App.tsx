@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center">
-        <div className="w-full xl:w-[1280px] 2xl:w-[1536px]">
+        <div className="">
           {/* Header */}
           <Navbar />
           {/* Content section here */}

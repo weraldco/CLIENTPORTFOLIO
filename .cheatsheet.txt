@@ -1,0 +1,6 @@
+w-full xl:w-[1280px] 2xl:w-[1536px]
+
+
+bg-[#00715D]  hover:bg-[#018f75] active:bg-[#017761]
+
+bg-[#FDD65B] hover:bg-[#facd37] active:bg-[#fdd85e]
