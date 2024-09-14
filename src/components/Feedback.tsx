@@ -1,11 +1,12 @@
 import { BiSolidQuoteLeft } from "react-icons/bi";
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const MembersFeedback = () => {
   return (
     <>
-      <div className="grid place-content-center">
-        <div className="grid w-full place-items-center p-10 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv>
+        <div className="grid place-items-center p-10">
           <ContentHeader
             className="grid text-center md:w-[700px]"
             subTitle="FEEDBACK FROM OUR MEMBERS"
@@ -20,7 +21,7 @@ const MembersFeedback = () => {
             <FeedbackItem />
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };
@@ -30,7 +31,7 @@ export default MembersFeedback;
 const FeedbackItem = () => {
   return (
     <>
-      <div className="w-full items-center justify-start rounded-lg bg-white p-6 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[400px]">
+      <div className="w-full items-center justify-start rounded-lg bg-slate-50 p-6 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[400px]">
         <span className="text-gray-600">
           <BiSolidQuoteLeft />
           We like the services of FinanceUp, it secure my future in different

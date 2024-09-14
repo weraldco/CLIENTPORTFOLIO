@@ -1,5 +1,5 @@
 import OurTeam from "../components/OurTeam";
-import ServicesDetails from "../components/ServicesDetails";
+import ServicesDetails from "../components/ServicesPageDetails";
 
 const Services = () => {
   return (

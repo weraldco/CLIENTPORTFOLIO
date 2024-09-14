@@ -1,10 +1,11 @@
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const PopularCause = () => {
   return (
     <>
-      <div className="grid place-content-center">
-        <div className="grid w-full justify-center gap-10 p-10 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv>
+        <div className="grid justify-center gap-10 p-10">
           <div className="grid place-content-center">
             <ContentHeader
               className="grid text-center md:w-[700px]"
@@ -61,7 +62,7 @@ const PopularCause = () => {
             />
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };

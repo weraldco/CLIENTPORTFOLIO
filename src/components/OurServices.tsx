@@ -2,12 +2,13 @@ import { BsPiggyBank } from "react-icons/bs";
 import { FaMoneyBillWheat } from "react-icons/fa6";
 import { PiGraduationCap, PiGrains, PiHandCoins } from "react-icons/pi";
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const ServicesSections = () => {
   return (
     <>
-      <div className="grid place-content-center bg-slate-50">
-        <div className="grid w-full gap-10 p-10 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv className="bg-slate-50">
+        <div className="grid gap-10 p-10">
           <div className="grid place-content-center">
             <ContentHeader
               className="grid text-center md:w-[550px]"
@@ -46,7 +47,7 @@ const ServicesSections = () => {
             />
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };

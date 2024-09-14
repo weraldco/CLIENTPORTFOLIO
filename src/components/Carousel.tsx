@@ -53,11 +53,11 @@ const Carousel = () => {
         </div>
         <IoIosArrowBack
           onClick={prevArrow}
-          className="absolute left-5 top-[50%] rounded-full bg-[rgba(20,20,20,0.5)] bg-gray-600 p-1 text-4xl text-white transition-all hover:bg-black"
+          className="absolute left-5 top-[50%] z-50 rounded-full bg-[rgba(20,20,20,0.5)] bg-gray-600 p-1 text-4xl text-white transition-all hover:bg-black"
         />
         <IoIosArrowForward
           onClick={nextArrow}
-          className="absolute right-5 top-[50%] rounded-full bg-[rgba(30,30,30,0.5)] p-1 text-4xl text-white transition-all hover:bg-black"
+          className="absolute right-5 top-[50%] z-50 rounded-full bg-[rgba(30,30,30,0.5)] p-1 text-4xl text-white transition-all hover:bg-black"
         />
       </div>
     </>

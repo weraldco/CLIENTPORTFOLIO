@@ -1,11 +1,12 @@
 import { GiRoundStar } from "react-icons/gi";
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const WhyChooseUs = () => {
   return (
     <>
-      <div className="grid place-content-center bg-orange-50">
-        <div className="grid w-full grid-flow-col gap-10 p-10 text-gray-500 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv className="bg-orange-50">
+        <div className="grid grid-flow-col gap-10 p-10 text-gray-500">
           <div className="grid gap-10">
             <div className="grid place-content-start">
               <ContentHeader
@@ -59,14 +60,19 @@ const WhyChooseUs = () => {
             <img src="/img/heart.png" alt="" />
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };
 
 export default WhyChooseUs;
 
-const HireItem = ({ title, content }) => {
+type HiteItemProps = {
+  title: string;
+  content: string;
+};
+
+const HireItem = ({ title, content }: HiteItemProps) => {
   return (
     <>
       <div className="grid items-center text-5xl">

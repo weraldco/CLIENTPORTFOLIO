@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="grid place-content-center bg-gray-100">
-        <div className="grid w-full gap-10 p-10 md:p-20 xl:w-[1280px] 2xl:w-[1536px]">
+        <div className="grid w-full place-items-center gap-10 p-10 md:p-20 xl:w-[1280px] 2xl:w-[1536px]">
           <ContentHeader
             className="grid text-center md:w-[700px]"
             subTitle="CONTACT US"

@@ -3,12 +3,13 @@ import { FaUser } from "react-icons/fa";
 import { PiStudentFill } from "react-icons/pi";
 import { RiHealthBookFill } from "react-icons/ri";
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const FrequetlyAskedQuestion = () => {
   return (
     <>
-      <div className="grid place-content-center bg-slate-50">
-        <div className="grid w-full md:grid-cols-2 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv className="bg-slate-50">
+        <div className="grid md:grid-cols-2">
           <div className="grid gap-10 px-5 py-10 text-center">
             <ContentHeader
               className="grid text-center md:text-left"
@@ -18,7 +19,7 @@ const FrequetlyAskedQuestion = () => {
             focus on your goals. We support your dream to come true."
             />
           </div>
-          <div className="grid place-items-center gap-10 md:grid-cols-2 md:gap-0">
+          <div className="grid place-items-center gap-10 md:grid-cols-2 md:gap-0 md:py-10">
             <div className="mt-10 grid gap-10">
               <CardMember count="2568" label="Enrolled Members">
                 <FaUser />
@@ -36,8 +37,8 @@ const FrequetlyAskedQuestion = () => {
               </CardMember>
             </div>
           </div>
-        </div>{" "}
-      </div>
+        </div>
+      </WrapperDiv>
     </>
   );
 };

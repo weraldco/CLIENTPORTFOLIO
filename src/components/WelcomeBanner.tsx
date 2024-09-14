@@ -1,11 +1,13 @@
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const Banner = () => {
   return (
     <>
       {/* <div className="relative grid grid-cols-2 items-center justify-center gap-10 p-24 py-[100px]"> */}
-      <div className="grid place-content-center">
-        <div className="grid w-full gap-10 p-10 md:grid-cols-2 xl:w-[1280px] 2xl:w-[1536px]">
+
+      <WrapperDiv>
+        <div className="grid gap-10 p-10 md:grid-cols-2">
           <div className="grid gap-8">
             <ContentHeader
               className="grid text-center md:text-left"
@@ -32,8 +34,8 @@ const Banner = () => {
           <div className="">
             <img src="/img/plantvest2.png" alt="" />
           </div>
-        </div>{" "}
-      </div>
+        </div>
+      </WrapperDiv>
     </>
   );
 };

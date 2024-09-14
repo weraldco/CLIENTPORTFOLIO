@@ -1,10 +1,11 @@
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const SubscribeUs = () => {
   return (
     <>
-      <div className="subscriber-section grid place-content-center">
-        <div className="grid w-full gap-10 p-10 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv className="subscriber-section">
+        <div className="grid gap-10 p-10">
           <div className="grid place-content-center">
             <ContentHeader
               className="grid text-center text-gray-50 md:w-[700px]"
@@ -27,7 +28,7 @@ const SubscribeUs = () => {
             </button>
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };

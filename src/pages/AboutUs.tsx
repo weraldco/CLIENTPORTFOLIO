@@ -1,5 +1,5 @@
-import MembersFeedback from "../components/MembersFeedback";
-import PopularCause from "../components/PopularCause";
+import PopularCause from "../components/CauseAchievement";
+import MembersFeedback from "../components/Feedback";
 import WhyHireUs from "../components/WhyChooseUs";
 
 const AboutUs = () => {

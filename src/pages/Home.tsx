@@ -1,10 +1,10 @@
-import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
-import { default as FrequetlyAskedQuestion } from "../components/FrequetlyAskedQuestion";
-import MembersFeedback from "../components/MembersFeedback";
+import PopularCause from "../components/CauseAchievement";
+import MembersFeedback from "../components/Feedback";
+import ServicesSections from "../components/OurServices";
 import OurTeam from "../components/OurTeam";
-import PopularCause from "../components/PopularCause";
-import ServicesSections from "../components/ServicesSections";
+import { default as FrequetlyAskedQuestion } from "../components/RecentlyAskedQuestion";
+import Banner from "../components/WelcomeBanner";
 import WhyChooseUS from "../components/WhyChooseUs";
 
 const Home = () => {

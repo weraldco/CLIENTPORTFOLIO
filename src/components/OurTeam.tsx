@@ -1,10 +1,11 @@
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const OurTeam = () => {
   return (
     <>
-      <div className="grid place-content-center">
-        <div className="grid w-full gap-10 pb-20 pt-10 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv>
+        <div className="grid gap-10 pb-20 pt-10">
           <div className="grid items-center md:grid-flow-col">
             <ContentHeader
               className="grid text-center md:w-[700px] md:text-left"
@@ -42,7 +43,7 @@ const OurTeam = () => {
             />
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };

@@ -5,12 +5,13 @@ import { FiClock } from "react-icons/fi";
 import { RiInstagramFill } from "react-icons/ri";
 import { SlLocationPin } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import WrapperDiv from "./WrapperDiv";
 
 const FooterNav = () => {
   return (
     <>
-      <div className="footer-section grid place-content-center">
-        <div className="grid w-full gap-5 p-5 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv className="footer-section">
+        <div className="grid gap-5 p-5">
           <nav className="grid grid-flow-col items-center">
             <div>
               <img src="/img/logo4-white.png" alt="" className="w-[250px]" />
@@ -72,7 +73,7 @@ const FooterNav = () => {
             </div>
           </nav>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };
