@@ -6,15 +6,18 @@ const WhyChooseUs = () => {
   return (
     <>
       <WrapperDiv className="bg-orange-50">
-        <div className="grid grid-flow-col gap-10 p-10 text-gray-500">
-          <div className="grid gap-10">
-            <div className="grid place-content-start">
-              <ContentHeader
-                className="grid text-left text-black"
-                subTitle="WHY CHOOSE US"
-                title="Come And Join With Us for A Better Life and Future"
-                content=""
-              />
+        <div className="grid gap-10 p-10 text-gray-500">
+          <div className="grid place-content-start">
+            <ContentHeader
+              className="grid text-left text-black lg:w-[700px]"
+              subTitle="WHY CHOOSE US"
+              title="Come And Join With Us for A Better Life and Future"
+              content=""
+            />
+          </div>
+          <div className="grid gap-10 lg:grid-flow-col">
+            <div className="grid place-content-center lg:hidden">
+              <img src="/img/heart.png" alt="" className="w-[400px]" />
             </div>
             <span className="grid gap-5">
               Join us and discover our mission and vission, we help you
@@ -55,9 +58,9 @@ const WhyChooseUs = () => {
                 </li>
               </ul>
             </span>
-          </div>
-          <div className="hidden place-content-center md:grid">
-            <img src="/img/heart.png" alt="" />
+            <div className="hidden place-content-center lg:grid">
+              <img src="/img/heart.png" alt="" />
+            </div>
           </div>
         </div>
       </WrapperDiv>

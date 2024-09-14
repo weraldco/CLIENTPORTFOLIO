@@ -6,7 +6,7 @@ const ServicesDetails = () => {
       <div>
         <div className="grid place-content-center">
           <ContentHeader
-            className="grid text-center md:w-[550px]"
+            className="grid text-center lg:w-[550px]"
             subTitle="OUR SERVICES"
             title="We Are Here To Help You"
             content="At FinanceUp Services, let us help you solve problems so that you can

@@ -5,7 +5,7 @@ type WrapperDivProps = {
 const WrapperDiv = ({ children, className }: WrapperDivProps) => {
   return (
     <div className={`grid place-content-center ${className}`}>
-      <div className="w-full xl:w-[1280px] 2xl:w-[1536px]">{children}</div>
+      <div className="w-full py-6 xl:w-[1280px]">{children}</div>
     </div>
   );
 };

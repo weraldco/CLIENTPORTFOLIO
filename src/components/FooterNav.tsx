@@ -17,7 +17,7 @@ const FooterNav = () => {
               <img src="/img/logo4-white.png" alt="" className="w-[250px]" />
             </div>
             <div>
-              <ul className="grid grid-flow-col text-gray-300">
+              <ul className="grid grid-flow-col text-xs text-gray-300 lg:text-base">
                 <li className="rounded-full px-4 py-2 transition-all hover:font-bold">
                   <Link to="/">Home</Link>
                 </li>
@@ -30,7 +30,7 @@ const FooterNav = () => {
               </ul>
             </div>
           </nav>
-          <nav className="grid place-items-center gap-5 border-t-2 border-t-gray-600 px-3 py-4 md:grid-cols-2 md:place-items-start">
+          <nav className="grid place-items-center gap-5 border-t-2 border-t-gray-600 px-3 py-4 lg:grid-cols-2 lg:place-items-start">
             <div className="flex gap-3 text-base text-gray-200">
               <Link
                 to="/"
@@ -57,7 +57,7 @@ const FooterNav = () => {
                 <BsYoutube />
               </Link>
             </div>
-            <div className="grid gap-5 text-center text-[0.8em] text-gray-200 md:grid-flow-col md:place-content-end">
+            <div className="grid gap-5 text-center text-[0.8em] text-gray-200 lg:grid-flow-col lg:place-content-end">
               <div className="flex items-center justify-center gap-1">
                 <SlLocationPin size={20} className="text-base text-[#00715D]" />
                 243 Clark Avenue - Bagumbayan Quezon City, PH 1105

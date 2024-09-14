@@ -8,7 +8,7 @@ const MembersFeedback = () => {
       <WrapperDiv>
         <div className="grid place-items-center p-10">
           <ContentHeader
-            className="grid text-center md:w-[700px]"
+            className="grid text-center lg:w-[700px]"
             subTitle="FEEDBACK FROM OUR MEMBERS"
             title="Our Goal is To Satisfied Our Member By Helping Them"
             content="At FinanceUp Services, we identify all the cause of not having a
@@ -16,7 +16,7 @@ const MembersFeedback = () => {
             focus on your goals. We support your dream to come true."
           />
 
-          <div className="grid gap-10 py-10 md:grid-flow-col">
+          <div className="grid gap-10 py-10 lg:grid-flow-col">
             <FeedbackItem />
             <FeedbackItem />
           </div>
@@ -31,7 +31,7 @@ export default MembersFeedback;
 const FeedbackItem = () => {
   return (
     <>
-      <div className="w-full items-center justify-start rounded-lg bg-slate-50 p-6 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[400px]">
+      <div className="w-full items-center justify-start rounded-lg bg-slate-50 p-6 shadow-md duration-300 ease-in-out hover:scale-110 lg:w-[400px]">
         <span className="text-gray-600">
           <BiSolidQuoteLeft />
           We like the services of FinanceUp, it secure my future in different

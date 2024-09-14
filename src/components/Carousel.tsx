@@ -28,7 +28,7 @@ const Carousel = () => {
               imgIndex === index && (
                 <div
                   key={image.url}
-                  className={`block w-full object-cover md:h-full translate-x-[${
+                  className={`block w-full object-cover lg:h-full translate-x-[${
                     -100 * imgIndex
                   }%] flex-shrink-0 flex-grow-0 duration-300 ease-in-out`}
                 >
@@ -38,11 +38,11 @@ const Carousel = () => {
                     className="image-slider zoom-in relative"
                   />
                   <div className="absolute bottom-0 left-0 right-0 top-0 z-30 grid justify-center self-center py-20 text-center text-base text-white">
-                    <div className="grid place-items-center md:w-[700px]">
-                      <span className="image-title text-3xl md:text-6xl">
+                    <div className="grid place-items-center lg:w-[700px]">
+                      <span className="image-title text-3xl lg:text-6xl">
                         {image.title}
                       </span>
-                      <span className="image-content text-xs md:text-base">
+                      <span className="image-content text-xs lg:text-base">
                         {image.content}
                       </span>
                     </div>

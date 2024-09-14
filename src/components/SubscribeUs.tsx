@@ -1,3 +1,4 @@
+import YellowButton from "./Button";
 import ContentHeader from "./ContentHeader";
 import WrapperDiv from "./WrapperDiv";
 
@@ -8,7 +9,7 @@ const SubscribeUs = () => {
         <div className="grid gap-10 p-10">
           <div className="grid place-content-center">
             <ContentHeader
-              className="grid text-center text-gray-50 md:w-[700px]"
+              className="grid text-center text-gray-50 lg:w-[700px]"
               subTitle="SUBSCRIBE TO US"
               title="Subscribe for Newsletter"
               content="Join us and discover our mission and vission, we help you assestment
@@ -21,11 +22,9 @@ const SubscribeUs = () => {
             <input
               type="text"
               placeholder="Email address"
-              className="w-full rounded-lg p-4 md:w-[300px]"
+              className="w-full rounded-lg p-4 lg:w-[300px]"
             />
-            <button className="w-full rounded-lg bg-[#FDD65B] px-10 py-4 text-sm font-bold transition-all hover:bg-[#facd37] active:bg-[#fdd85e] md:w-[200px]">
-              Subscribe
-            </button>
+            <YellowButton className="px-14 py-4">Subscribe</YellowButton>
           </div>
         </div>
       </WrapperDiv>

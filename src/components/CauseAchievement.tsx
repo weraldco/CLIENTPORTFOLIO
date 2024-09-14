@@ -8,7 +8,7 @@ const PopularCause = () => {
         <div className="grid justify-center gap-10 p-10">
           <div className="grid place-content-center">
             <ContentHeader
-              className="grid text-center md:w-[700px]"
+              className="grid text-center lg:w-[700px]"
               subTitle="CAUSES WE WANT TO ACHIEVE"
               title="Find The Popular Cause and Help You"
               content="At FinanceUp Services, we identify all the cause of not having a
@@ -17,7 +17,7 @@ const PopularCause = () => {
             />
           </div>
 
-          <div className="grid gap-10 md:grid-flow-col">
+          <div className="grid gap-10 lg:grid-flow-col">
             <CauseItem
               imgUrl="/img/cause/cause3.png"
               label="Investement"
@@ -49,7 +49,7 @@ const PopularCause = () => {
             <CauseItem
               imgUrl="/img/cause/cause1.png"
               label="Food"
-              title="Able to buy food for your everyday life"
+              title="Able to buy food for your everyday"
               content="To offer comprehensive financial planning and investment management
             services that address all aspects of our clients' financial lives.
             To build lasting relationships with our clients through
@@ -94,7 +94,7 @@ const CauseItem = ({
 }: CauseItemProps) => {
   return (
     <>
-      <div className="group grid w-full gap-5 rounded-b-xl pb-10 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[425px]">
+      <div className="group grid w-full gap-5 rounded-b-xl pb-10 shadow-md duration-300 ease-in-out hover:scale-110">
         <div className="relative border-b-[7px] border-[#00715D]">
           <img
             src={imgUrl}

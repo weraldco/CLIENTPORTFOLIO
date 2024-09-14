@@ -11,40 +11,45 @@ const ServicesSections = () => {
         <div className="grid gap-10 p-10">
           <div className="grid place-content-center">
             <ContentHeader
-              className="grid text-center md:w-[550px]"
+              className="grid text-center lg:w-[550px]"
               subTitle="OUR SERVICES"
               title="We Are Here To Help You"
               content="At FinanceUp Services, let us help you solve problems so that you can
           focus on your goals. We support your dream to come true."
             />
           </div>
-          <div className="grid items-center justify-center gap-5 md:grid-flow-col">
+          <div className="grid items-center justify-center gap-5 lg:grid-flow-col">
             <ServicesItem
-              logo={<FaMoneyBillWheat />}
               title="Investment Planning"
               content="We help people to develop solutions for Financial Problems. Giving
             you a chance to have a freedom in your Investment."
-            />
+            >
+              <FaMoneyBillWheat />
+            </ServicesItem>
             <ServicesItem
-              logo={<BsPiggyBank />}
               title="Financial Planning"
               content="Assisting with tracking income and expenses to improve savings and spending habits."
-            />
+            >
+              <BsPiggyBank />
+            </ServicesItem>
             <ServicesItem
-              logo={<PiGraduationCap />}
               title="Retirement Planning"
               content="Helping you choose the right retirement accounts and contribution levels to meet your retirement goals."
-            />
+            >
+              <PiGraduationCap />
+            </ServicesItem>
             <ServicesItem
-              logo={<PiGrains />}
               title="Retirement Planning"
               content="Helping you choose the right retirement accounts and contribution levels to meet your retirement goals."
-            />{" "}
+            >
+              <PiGrains />
+            </ServicesItem>
             <ServicesItem
-              logo={<PiHandCoins />}
               title="Retirement Planning"
               content="Helping you choose the right retirement accounts and contribution levels to meet your retirement goals."
-            />
+            >
+              <PiHandCoins />
+            </ServicesItem>
           </div>
         </div>
       </WrapperDiv>
@@ -55,17 +60,17 @@ const ServicesSections = () => {
 export default ServicesSections;
 
 type ServicesItemProps = {
-  logo: any;
+  children: React.ReactNode;
   title: string;
   content: string;
 };
 
-const ServicesItem = ({ logo, title, content }: ServicesItemProps) => {
+const ServicesItem = ({ children, title, content }: ServicesItemProps) => {
   return (
     <>
-      <div className="group grid w-full items-center justify-center gap-10 rounded-xl bg-white p-5 text-gray-600 shadow-md duration-300 ease-in-out hover:scale-110 md:w-[225px]">
+      <div className="group grid w-full items-center justify-center gap-10 rounded-xl bg-white p-5 text-gray-600 shadow-md duration-300 ease-in-out hover:scale-110 lg:w-[225px]">
         <div className="grid justify-center text-7xl text-[#00715D] group-hover:text-[#018f75]">
-          {logo}
+          {children}
         </div>
         <div className="grid h-[150px]">
           <h1 className="text-center text-lg font-bold text-black group-hover:text-[#018f75]">

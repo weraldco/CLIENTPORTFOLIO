@@ -1,19 +1,21 @@
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import YellowButton from "./Button";
 import ContentHeader from "./ContentHeader";
+import WrapperDiv from "./WrapperDiv";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="grid place-content-center bg-gray-100">
-        <div className="grid w-full place-items-center gap-10 p-10 md:p-20 xl:w-[1280px] 2xl:w-[1536px]">
+      <WrapperDiv className="bg-gray-100">
+        <div className="grid place-items-center gap-10 p-10 lg:p-10">
           <ContentHeader
-            className="grid text-center md:w-[700px]"
+            className="grid text-center lg:w-[700px]"
             subTitle="CONTACT US"
             title="We Love To Hear your Insights"
             content=""
           />
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-10 lg:grid-cols-2">
             <div className="grid gap-5 px-5">
               <div>
                 <img
@@ -75,13 +77,11 @@ const ContactUs = () => {
                 placeholder="Message"
                 className="w-full resize-none rounded-lg bg-gray-100 p-4"
               />
-              <button className="rounded-lg bg-[#FDD65B] py-5 text-sm font-bold transition-all hover:bg-[#facd37] active:bg-[#fdd85e]">
-                Make an Appointment
-              </button>
+              <YellowButton className="py-4">Make an Appointment</YellowButton>
             </div>
           </div>
         </div>
-      </div>
+      </WrapperDiv>
     </>
   );
 };

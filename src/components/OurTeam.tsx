@@ -1,3 +1,4 @@
+import { default as YellowButton } from "./Button";
 import ContentHeader from "./ContentHeader";
 import WrapperDiv from "./WrapperDiv";
 
@@ -6,21 +7,21 @@ const OurTeam = () => {
     <>
       <WrapperDiv>
         <div className="grid gap-10 pb-20 pt-10">
-          <div className="grid items-center md:grid-flow-col">
+          <div className="grid items-center lg:grid-flow-col">
             <ContentHeader
-              className="grid text-center md:w-[700px] md:text-left"
+              className="grid w-full text-center lg:text-left"
               subTitle="OUR EXPERT TEAM"
-              title="Meet The Team Behind Their Success Story"
+              title="Meet The Team Behind Our Success Story"
               content=""
             />
-            <div className="grid place-content-center md:place-content-end">
-              <button className="grid rounded-lg bg-[#FDD65B] px-6 py-4 text-sm font-bold transition-all hover:bg-yellow-300 active:bg-[#fdd85e]">
-                View All Members
-              </button>
+            <div className="grid place-content-center lg:place-content-end">
+              <YellowButton className="px-6 py-4">
+                View all Members
+              </YellowButton>
             </div>
           </div>
 
-          <div className="grid place-items-center gap-x-5 gap-y-20 md:grid-flow-col">
+          <div className="grid place-content-center gap-y-20 lg:grid-cols-4">
             <Advisor
               img_url="/img/advisor/advisor1.png"
               name="Alexander Great"
@@ -57,13 +58,13 @@ type AdvisorProps = {
 const Advisor = ({ img_url, name, job }: AdvisorProps) => {
   return (
     <>
-      <div className="group relative w-80 duration-300 ease-in-out hover:scale-105">
+      <div className="group relative grid w-80 place-content-center duration-300 ease-in-out hover:scale-105">
         <img
           src={img_url}
-          className="h-[420px] w-[320px] rounded-xl object-cover"
+          className="h-[400px] w-[300px] rounded-xl object-cover"
           alt=""
         />
-        <div className="absolute -bottom-10 left-5 right-5 grid rounded-lg bg-[#F7F7F7] py-4 text-center group-hover:bg-[#00715D]">
+        <div className="absolute -bottom-10 left-6 right-6 grid rounded-lg bg-[#F7F7F7] py-4 text-center group-hover:bg-[#00715D]">
           <span className="font-bold group-hover:text-yellow-400">{name}</span>
           <span className="text-sm group-hover:text-white">{job}</span>
         </div>
