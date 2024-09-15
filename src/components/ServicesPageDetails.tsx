@@ -37,23 +37,23 @@ const ServicesDetails = () => {
             />
             <ServicesItem
               className="card up-downY businessplan"
-              title="Retirement Planning"
-              content="Retirement planning is a comprehensive process aimed at ensuring you have enough resources to live comfortably once you stop working. Effective retirement planning requires careful thought and ongoing management to ensure you’re financially prepared for retirement and can enjoy it as planned."
+              title="Business Planning"
+              content="Business planning is a critical process that involves outlining your business goals, strategies, and the means to achieve them. It encompasses everything from the initial idea to the operational and financial aspects of running a successful business. "
             />
             <ServicesItem
               className="card up-downY newhouse"
-              title="Retirement Planning"
-              content="Retirement planning is a comprehensive process aimed at ensuring you have enough resources to live comfortably once you stop working. Effective retirement planning requires careful thought and ongoing management to ensure you’re financially prepared for retirement and can enjoy it as planned."
+              title="Housing Planning"
+              content="Housing planning involves strategizing about your current and future housing needs, balancing factors such as affordability, location, lifestyle, and long-term goals. "
             />
             <ServicesItem
               className="card up-downY health"
-              title="Retirement Planning"
-              content="Retirement planning is a comprehensive process aimed at ensuring you have enough resources to live comfortably once you stop working. Effective retirement planning requires careful thought and ongoing management to ensure you’re financially prepared for retirement and can enjoy it as planned."
+              title="Health Issurance Planning"
+              content="Health insurance is designed to help cover the costs of medical care and protect you from high expenses associated with illness or injury."
             />
             <ServicesItem
               className="card up-downY investment"
-              title="Retirement Planning"
-              content="Retirement planning is a comprehensive process aimed at ensuring you have enough resources to live comfortably once you stop working. Effective retirement planning requires careful thought and ongoing management to ensure you’re financially prepared for retirement and can enjoy it as planned."
+              title="Investment Planning"
+              content="nvestment planning is a strategic approach to managing your investments to achieve your financial goals. It involves assessing your financial situation, setting objectives, and creating a strategy to grow and manage your assets."
             />
           </div>
         </div>
