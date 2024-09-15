@@ -6,18 +6,18 @@ import { FiClock } from "react-icons/fi";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { RiInstagramFill } from "react-icons/ri";
 import { SlLocationPin } from "react-icons/sl";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
+
   const handleMenuOn = () => {
     setIsMenu(!isMenu);
   };
-  console.log(isMenu);
   return (
     <>
-      <div className="grid lg:place-content-center">
-        <header className="w-full bg-white xl:w-[1280px]">
-          <nav className="grid grid-flow-row border-b-2 px-3 py-2 lg:grid-cols-2">
+      <div className="grid">
+        <header className="grid w-full place-content-center border-b-2">
+          <nav className="grid grid-flow-row px-3 py-2 lg:grid-cols-2">
             <div className="flex place-content-center gap-3 text-xs text-gray-500 lg:place-content-start">
               <SocialBtn>
                 <FaFacebookF />
@@ -45,7 +45,9 @@ const Navbar = () => {
               </div>
             </div>
           </nav>
-          <nav className="relative grid grid-flow-col items-center px-2 py-2 lg:grid-cols-3">
+        </header>
+        <header className="grid w-full lg:place-content-center">
+          <nav className="relative grid grid-flow-col items-center px-2 py-2 lg:grid-cols-3 xl:w-[1280px]">
             {/* Logo */}
             <div className="flex gap-2">
               <Link to="/">
@@ -56,21 +58,36 @@ const Navbar = () => {
             {/* Menu */}
             <div className="navbar-menu fixed top-[260px] z-50 hidden w-full items-center bg-white py-10 text-center text-[0.95em] duration-300 ease-in-out lg:static lg:block lg:translate-x-[0]">
               <ul className="bottom-0 top-10 grid gap-8 lg:grid-flow-col">
-                <Link to="/">
-                  <li className="rounded-none px-4 py-2 transition-all hover:bg-slate-100 lg:rounded-full">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => {
+                    return isActive ? `rounded-full bg-orange-50` : "";
+                  }}
+                >
+                  <li className="rounded-none px-4 py-2 transition-all hover:bg-orange-50 lg:rounded-full">
                     Home
                   </li>
-                </Link>
-                <Link to="/services">
-                  <li className="rounded-full px-4 py-2 transition-all hover:bg-slate-100">
+                </NavLink>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => {
+                    return isActive ? `rounded-full bg-orange-50` : "";
+                  }}
+                >
+                  <li className="rounded-full px-4 py-2 transition-all hover:bg-orange-50">
                     Services
                   </li>
-                </Link>
-                <Link to="/about">
-                  <li className="rounded-full px-4 py-2 transition-all hover:bg-slate-100">
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => {
+                    return isActive ? `rounded-full bg-orange-50` : "";
+                  }}
+                >
+                  <li className="rounded-full px-4 py-2 transition-all hover:bg-orange-50">
                     About us
                   </li>
-                </Link>
+                </NavLink>
               </ul>
             </div>
             <div className="grid justify-end">
@@ -95,28 +112,49 @@ const Navbar = () => {
           {isMenu && (
             <nav className="flex items-center justify-center py-10">
               <ul className="grid w-full">
-                <li
-                  className="rounded-none px-4 py-6 transition-all hover:bg-slate-200 lg:rounded-full"
-                  onClick={handleMenuOn}
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => {
+                    return isActive ? `bg-orange-50` : "";
+                  }}
                 >
-                  <Link to="/">Home</Link>
-                </li>
-                <li
-                  className="rounded-none px-4 py-6 transition-all hover:bg-slate-200 lg:rounded-full"
-                  onClick={handleMenuOn}
+                  <li
+                    className="rounded-none px-4 py-6 transition-all hover:bg-orange-50 lg:rounded-full"
+                    onClick={handleMenuOn}
+                  >
+                    Home
+                  </li>
+                </NavLink>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => {
+                    return isActive ? `bg-orange-50` : "";
+                  }}
                 >
-                  <Link to="/services">Services</Link>
-                </li>
-                <li
-                  className="rounded-none px-4 py-6 transition-all hover:bg-slate-200 lg:rounded-full"
-                  onClick={handleMenuOn}
+                  <li
+                    className="rounded-none px-4 py-6 transition-all hover:bg-orange-50 lg:rounded-full"
+                    onClick={handleMenuOn}
+                  >
+                    Services
+                  </li>
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => {
+                    return isActive ? `bg-orange-50` : "";
+                  }}
                 >
-                  <Link to="/about">About us</Link>
-                </li>
+                  <li
+                    className="rounded-none px-4 py-6 transition-all hover:bg-orange-50 lg:rounded-full"
+                    onClick={handleMenuOn}
+                  >
+                    About us
+                  </li>
+                </NavLink>
               </ul>
             </nav>
           )}
-        </header>{" "}
+        </header>
       </div>
     </>
   );

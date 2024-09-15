@@ -97,3 +97,91 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.left-rightX {
+  @apply translate-x-[-100%] opacity-0 blur-lg transition-all duration-1000;
+}
+.up-downY {
+  @apply translate-y-[-100%] opacity-0 blur-lg transition-all duration-1000;
+}
+.down-upY {
+  @apply translate-y-[110%] opacity-0 blur-lg transition-all duration-1000;
+}
+
+.showY {
+  @apply translate-y-[0] opacity-[1] blur-0 ease-in-out;
+}
+.showX {
+  @apply translate-x-[0] opacity-[1] blur-0 ease-in-out;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+.logo:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+/* card */
+.card:nth-child(2) {
+  transition-delay: 200ms;
+}
+.card:nth-child(3) {
+  transition-delay: 400ms;
+}
+.card:nth-child(4) {
+  transition-delay: 600ms;
+}
+.card:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+/* Services Card */
+.service:nth-child(2) {
+  transition-delay: 200ms;
+}
+.service:nth-child(3) {
+  transition-delay: 400ms;
+}
+.service:nth-child(4) {
+  transition-delay: 600ms;
+}
+.service:nth-child(5) {
+  transition-delay: 800ms;
+}
+.service:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+/* Services Card info */
+.educational {
+  background-image: url("/img/services/educational.jpg");
+}
+.retirementplan {
+  background-image: url("/img/services/retirementplan.jpg");
+}
+.businessplan {
+  background-image: url("/img/services/business.jpg");
+}
+.newhouse {
+  background-image: url("/img/services/newhouse.jpg");
+}
+.health {
+  background-image: url("/img/services/health.jpg");
+}
+.investment {
+  background-image: url("/img/services/invest.jpg");
+}
+
+.educational,
+.retirementplan,
+.businessplan,
+.newhouse,
+.health,
+.investment {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

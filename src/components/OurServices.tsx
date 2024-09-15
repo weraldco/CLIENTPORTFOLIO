@@ -9,7 +9,7 @@ const ServicesSections = () => {
     <>
       <WrapperDiv className="bg-slate-50">
         <div className="grid gap-10 p-10">
-          <div className="grid place-content-center">
+          <div className="up-downY grid place-content-center">
             <ContentHeader
               className="grid text-center lg:w-[550px]"
               subTitle="OUR SERVICES"
@@ -18,7 +18,7 @@ const ServicesSections = () => {
           focus on your goals. We support your dream to come true."
             />
           </div>
-          <div className="grid items-center justify-center gap-5 lg:grid-flow-col">
+          <div className="left-rightX grid items-center justify-center gap-5 lg:grid-flow-col">
             <ServicesItem
               title="Investment Planning"
               content="We help people to develop solutions for Financial Problems. Giving
@@ -68,7 +68,7 @@ type ServicesItemProps = {
 const ServicesItem = ({ children, title, content }: ServicesItemProps) => {
   return (
     <>
-      <div className="group grid w-full items-center justify-center gap-10 rounded-xl bg-white p-5 text-gray-600 shadow-md duration-300 ease-in-out hover:scale-110 lg:w-[225px]">
+      <div className="card left-rightX group grid w-full items-center justify-center gap-10 rounded-xl bg-white p-5 text-gray-600 shadow-md lg:w-[225px]">
         <div className="grid justify-center text-7xl text-[#00715D] group-hover:text-[#018f75]">
           {children}
         </div>

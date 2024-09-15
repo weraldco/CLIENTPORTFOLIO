@@ -53,7 +53,7 @@ type CardMemberProps = {
 const CardMember = ({ count, label, children }: CardMemberProps) => {
   return (
     <>
-      <div className="grid h-[275px] w-[275px] justify-center rounded-lg bg-white py-5 text-center shadow-lg duration-300 ease-in-out hover:scale-110">
+      <div className="card up-downY grid h-[275px] w-[275px] justify-center rounded-lg bg-white py-5 text-center shadow-lg">
         <div className="grid place-content-center py-5 text-5xl text-[#00715D]">
           {children}
         </div>

@@ -4,9 +4,7 @@ import WrapperDiv from "./WrapperDiv";
 const Banner = () => {
   return (
     <>
-      {/* <div className="relative grid grid-cols-2 items-center justify-center gap-10 p-24 py-[100px]"> */}
-
-      <WrapperDiv>
+      <WrapperDiv className="">
         <div className="grid gap-10 p-10 md:grid-cols-2">
           <div className="grid gap-8">
             <ContentHeader

@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { GiRoundStar } from "react-icons/gi";
+import { Animate } from "./animation";
 import ContentHeader from "./ContentHeader";
 import WrapperDiv from "./WrapperDiv";
 
 const WhyChooseUs = () => {
+  useEffect(() => {
+    Animate("showY", ".down-upY ");
+    Animate("showY", ".up-downY ");
+    Animate("showX", ".left-rightX ");
+  }, []);
   return (
     <>
       <WrapperDiv className="bg-orange-50">
@@ -27,7 +34,7 @@ const WhyChooseUs = () => {
               clients through transparency, integrity, and a dedication to their
               best interests.
               <ul className="grid gap-5">
-                <li className="grid grid-flow-col gap-5">
+                <li className="card left-rightX grid grid-flow-col gap-5">
                   <HireItem
                     title="Our Mission"
                     content="To offer comprehensive financial planning and investment
@@ -37,7 +44,7 @@ const WhyChooseUs = () => {
                     their best interests."
                   />
                 </li>
-                <li className="grid grid-flow-col gap-5">
+                <li className="card left-rightX grid grid-flow-col gap-5">
                   <HireItem
                     title="Our Vision"
                     content="To offer comprehensive financial planning and investment
@@ -47,7 +54,7 @@ const WhyChooseUs = () => {
                     their best interests."
                   />
                 </li>
-                <li className="grid grid-flow-col gap-5">
+                <li className="card left-rightX grid grid-flow-col gap-5">
                   <HireItem
                     title="Our Mission"
                     content="To offer comprehensive financial planning and investment management

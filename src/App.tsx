@@ -9,8 +9,8 @@ import Services from "./pages/Services";
 function App() {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="">
+      <div className="flex w-full place-content-center">
+        <div className="w-full">
           {/* Header */}
           <Navbar />
           {/* Content section here */}

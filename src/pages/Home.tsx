@@ -13,7 +13,6 @@ const Home = () => {
       <div className="w-[100%]">
         <Carousel />
       </div>
-      {/* <h1 className="text-3xl">Home Page Section</h1> */}
 
       <Banner />
       <ServicesSections />

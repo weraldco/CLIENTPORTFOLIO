@@ -31,7 +31,7 @@ export default MembersFeedback;
 const FeedbackItem = () => {
   return (
     <>
-      <div className="w-full items-center justify-start rounded-lg bg-slate-50 p-6 shadow-md duration-300 ease-in-out hover:scale-110 lg:w-[400px]">
+      <div className="card down-upY w-full items-center justify-start rounded-lg bg-slate-50 p-6 shadow-md lg:w-[400px]">
         <span className="text-gray-600">
           <BiSolidQuoteLeft />
           We like the services of FinanceUp, it secure my future in different
@@ -40,7 +40,7 @@ const FeedbackItem = () => {
         <div className="grid grid-flow-col place-content-end gap-3">
           <div className="grid place-content-center">
             <img
-              src="/img/member/member1.jpg"
+              src="/img/member/member1.png"
               alt=""
               className="h-14 w-14 rounded-full object-cover"
             />
